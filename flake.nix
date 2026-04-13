@@ -1,19 +1,15 @@
 {
-  description = "Personal configuration with additional inputs";
+  description = "Config Flake for NXCore";
 
-  inputs = {
-    nixpkgs.url = "nixpkgs/nixos-25.11";
-    nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
-  };
+  inputs.core.url = "github:leahevy/nix-dotfiles/main";
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      nixpkgs-unstable,
-      ...
-    }@inputs:
-    {
-      configInputs = { };
+    { self, core, ... }@inputs:
+    core.configure {
+      config = self.outPath;
+      additionalInputs = builtins.removeAttrs inputs [
+        "core"
+        "self"
+      ];
     };
 }
