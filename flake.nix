@@ -6,7 +6,7 @@
   outputs =
     { self, core, ... }@inputs:
     core.configure {
-      config = self.outPath;
+      config = self;
       additionalInputs = builtins.removeAttrs inputs [
         "core"
         "self"
