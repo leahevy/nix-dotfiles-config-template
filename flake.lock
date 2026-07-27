@@ -191,11 +191,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1785055754,
-        "narHash": "sha256-hkk6ZjwA5aOexh+n79BDnNBjYySjIubI4fzfXoe5qPc=",
+        "lastModified": 1785134573,
+        "narHash": "sha256-QlbG/NejxuA+wrZ5I+GJejrD8/ypoU9lzVgrLL+nmkE=",
         "owner": "leahevy",
         "repo": "nix-dotfiles",
-        "rev": "38aad1894aa94991bb69ad91f2d4bf9d64bd9173",
+        "rev": "aabd15751a36b8f2d35ba539f14b74efcea482b4",
         "type": "github"
       },
       "original": {
