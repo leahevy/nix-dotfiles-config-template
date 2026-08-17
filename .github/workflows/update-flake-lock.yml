@@ -38,3 +38,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr merge --auto --squash "${{ steps.cpr.outputs.pull-request-number }}"
+          || gh pr merge --squash "${{ steps.cpr.outputs.pull-request-number }}"
